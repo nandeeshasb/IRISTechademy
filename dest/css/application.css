@@ -1,0 +1,23 @@
+.login-head {
+	background-color: #000;
+	height: 120px;
+
+}
+.login-head img {
+	height: 50px;
+	width: 220px;
+	margin: 40px 50px;
+}
+@media screen and (min-device-width: 768px) {
+	.form-1 {
+		left: 120px;
+	}
+
+}
+@media screen and (min-device-width: 1024px){
+	.form-1 {
+		left: 520px;
+		top: -54px;
+		background-color: #fff;
+	}
+}
