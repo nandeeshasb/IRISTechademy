@@ -1,103 +1,176 @@
-
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li {
+	list-style-type: none;
+}
 a, a:hover, a:active, a:focus, a:visited {
   text-decoration: none; 
 }
-
-ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; 
+a:hover {
+	color:#fff;
 }
-a {
-	color: #fff;
-	font-size: 21px;
-}
-.login-head {
-	background-color: #000;
-	height: 120px;
-
-}
-.login-head img {
-	height: 50px;
-	width: 220px;
-	margin: 40px 50px;
-}
-.round-input {
-	border-radius: 50px;
-	height: 50px;
-
-}
-.form-1 {
-	background-color: #fff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-	border-radius:5px;
-
-}
-.card-shadow {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-}
-.img-carousel {
-	width: 20px;
-	height: 20px;
-	border-radius: 50px;
-}
-.prev-icon {
-	background-color: blue
-
-}
-.head-main {
-	background-color: #2e2e2e;
-}
-.head-ul {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 0px;
+h1,h2,h3,h4,h5,p,a,span {
 	color: #fff;
 }
-.head-li {
-	margin-top: 6px;
+body {
+	background-image: url("../img/index1.jpg");
+	background-repeat: no-repeat;
 }
-.Techademy-img {
+.logo1 {
 	background-image: url("../img/techademy.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	font-size: 22px;
+	font-size: 1px;
 	color: transparent;
-	width: 150px;
-	margin-top: 5px;
+	width: 165px;
+	margin: 10px auto;
+	display: block;
+	height: 39px;
 }
-.content-head {
-	background-color:#2e2e2e; 
+.main-head li{
+	display: none;
+}
+.humburger {
+	color:#fff;
+	font-size: 25px;
+	top:-47px;
+	left: 20px;
+}
+.container-form {
+	margin-top: 110px;
+}
+.login-form input{
+	background-color: #00eaff;
+	border:none;
+	border-radius: 50px;
+	width: 100%;
+	height: 50px;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
 	color: #fff;
-	font-family: sans-serif;
-	
+}
+.login-form button {
+	background-color: #ff0a7c;
+	border:none;
+	border-radius: 50px;
+	width: 100%;
+	height: 50px;
+	margin: 5px;
+	padding: 10px;
+	color:#fff;
+}
+.head-size {
+	font-size: 1.7em;
+}
+.card-content {
+	border:none;
 }
 
 
-/*----------Media query start --------------*/
+
+
+
+
+
+
 
 @media screen and (min-device-width: 768px) {
-	.form-1 {
-		left: 120px;
+	.logo1 {
+		margin: 20px;		
 	}
-	.Techademy-img {
-		margin-left: 0px;
+	.main-head {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: -10px;
 	}
-	.admin-li {
-		margin-right: 0px;
+	.main-head li {
+		padding: 0 10px;
+		margin-top: -55px;
+		font-size: 22px;
+		font-weight: 600;
+		display: block;
 	}
-}
+	.main-head a, span {
+		color: #ff2684;
+		font-style: bold;
+
+	}
+	.main-head a:hover {
+		border-bottom: 2px solid #f50c81;
+		padding-bottom: 10px;
+	}
+	.active-a{
+		border-bottom: 2px solid #f50c81;
+		padding-bottom: 10px;
+	}
+	.humburger {
+		display: none;
+	}
+	.container-form {
+		margin-left: 75px;
+		margin-bottom:280px;
+	}
+	.login-form input{
+		width: 30%;
+	}
+	.login-form button{
+		width: 20%;
+	}
+	.head-size1 {
+		margin-top: 167px;
+		margin-right: 94px;
+		font-size: 60px;
+	}
+	.head-size2{
+		margin-top: 30px;
+		margin-left: 150px;
+		font-size: 60px;
+	}
+	.head-size3{
+		margin-top: 20px;
+		margin-left: 20px;
+		font-size: 60px;
+	}
+	.card-content {
+		height: 100px;
+	}
+} 
 
 
-@media screen and (min-device-width: 1024px){
-	.form-1 {
-		left: 520px;
-		top: -54px;
-		background-color: #fff;
-		border-radius: 5px;
+
+
+
+
+@media screen and (min-device-width: 1024px) {
+	.head-size1 {
+		margin-top: 160px;
+		margin-right: 200px;
+		font-size: 75px;
 	}
-	.card-shadow {
-		width: 400px;
-		margin-top: -50px;
+	.head-size2{
+		margin-top: 8px;
+		margin-left: 200px;
+		font-size: 75px;
+	}
+	.head-size3{
+		margin-top: 8px;
+		margin-left: 20px;
+		font-size: 75px;
+	}
+	.container-form {
+		margin-left: 100px;
+		margin-top: 120px;
+	}
+	.card-content {
+		height: 100px;
+	}
+	.card-bg {
+		background-color: #ffffff;
+		max-width: 1440px;
+		height: 300px;
+		padding: 20px;
 	}
 }

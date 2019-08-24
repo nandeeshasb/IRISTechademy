@@ -9,40 +9,78 @@
 
 	</head>
 <body>
-	<header class="login-head">
-		<img src="../img/techademy.png" class="login-img">	
+	<header>
+		<h1 class="logo1">Techademy</h1>
+		<span class="humburger glyphicon glyphicon-menu-hamburger"></span>
+		<ul class="main-head">
+			<li><a href="#" class="active-a">Home</a></li>
+			<li><a href="#">Courses</a></li>
+			<li><a href="#">Plans</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Leader board</a></li>
+			<li><span class="glyphicon glyphicon-search"></span></li>
+		</ul>
 	</header>
-	<!-- login page content start-->
-	<div class="container">		
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-8 col-lg-4 form-1">
-				<form class="form-2">
-					<div class="form-group">
-						<h2 class="mt-4 mb-4 text-center">Login</h2>
-						<input type="text" class="form-control mt-3 round-input">
-						<input type="password" class="form-control mt-3 round-input">
-						<button type="button" class="btn btn-primary btn-block mt-3 round-input" href="about.html">login</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>	
-	<!-- login page content end  -->
-	<div class="container mt-1 mb-2">
-		<div class="card card-shadow">
-			<div class="card-body">
-			   <h5 class="card-title">Featured</h5>
-			   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<img src="../img/course-lib.jpg">
-	  		<div class="card-body">	    		
-	    		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	    		<span><a href="#" class="btn">Read More</a></span>
-	    		<span><a href="#" class="btn">Register</a></span>
-	  		</div>
-		</div>
+	<div class="text-center mt-3 mb-3 ">
+		<h1 class="head-size1">Build Your Skills </h1>
+		<h1 class="head-size2">Complete With others</h1>
+		<h1 class="head-size3"> Dedicated Mentors</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+	</div>
+	<div class="container container-form">
+		<form action="about.html" onsubmit="return validate();" class="login-form" >
+			<input type="text" name="username" id="uname" placeholder="User Name" class="mt3">
+			<!--<label id="lbluser" style="color: red; visibility: hidden";>Invalid</label>-->
+			<input type="password" name="password" id="pass" placeholder="Password">
+			<button type="Submit">Submit</button>
+		</form>
 	</div>
 	
+	<div class="container card-bg mt-3 mb-3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
+				<div class="card text-center card-content">
+					<img src="../img/business.jpg" class="card-img">
+						<div class="card-img-overlay">
+							<h5 class="card-title">BUSINESS</h5>
+							<span class="card-text"><a href="#">10+ Courses</a></span>
+							<p class="card-text"><a href="#">25+ Mentors</a></p>
+						</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
+				<div class="card text-center card-content">
+					<img src="../img/design.jpg" class="card-img">
+						<div class="card-img-overlay">
+							<h5 class="card-title">DESIGN</h5>
+							<span class="card-text"><a href="#">10+ Courses</a></span>
+							<p class="card-text"><a href="#">25+ Mentors</a></p>
+						</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
+				<div class="card text-center card-content">
+					<img src="../img/development.jpg" class="card-img">
+						<div class="card-img-overlay">
+							<h5 class="card-title">DEVELOPMENT</h5>
+							<span class="card-text"><a href="#">10+ Courses</a></span>
+							<p class="card-text"><a href="#">25+ Mentors</a></p>
+						</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-2">
+				<div class="card text-center card-content">
+					<img src="../img/management.jpg" class="card-img">
+						<div class="card-img-overlay">
+							<h5 class="card-title">MANAGEMENT</h5>
+							<span class="card-text"><a href="#">10+ Courses</a></span>
+							<p class="card-text"><a href="#">25+ Mentors</a></p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/application.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
