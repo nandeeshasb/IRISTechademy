@@ -11,12 +11,13 @@ a, a:hover, a:active, a:focus, a:visited {
 a:hover {
 	color:#fff;
 }
-h1,h2,h3,h4,h5,p,a,span {
-	color: #fff;
+h1, h2, h3, h4, h5, p, a, span {
+	color: #ffffff;
 }
 body {
 	background-image: url("../img/index1.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .logo1 {
 	background-image: url("../img/techademy.png");
@@ -29,9 +30,29 @@ body {
 	display: block;
 	height: 39px;
 }
+.humburger {
+	cursor: pointer;
+}
 .main-head li{
+	display: block;
+	background-color: #000000;
+	line-height: 2.5rem;
+	padding-left: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	
+	
+}
+.main-head {
+left: 0;
+}
+.main-head a{
+	color:#ff2684;
+}
+.search1 {
 	display: none;
 }
+
 .humburger {
 	color:#fff;
 	font-size: 25px;
@@ -68,6 +89,13 @@ body {
 .card-content {
 	border:none;
 }
+.card-bg {
+	margin-bottom: 50px;
+}
+.home-content1,.home-content2 {
+	background-color: #20383d;
+	padding:15px 20px;
+}
 
 
 
@@ -92,6 +120,7 @@ body {
 		font-size: 22px;
 		font-weight: 600;
 		display: block;
+		background-color:transparent;
 	}
 	.main-head a, span {
 		color: #ff2684;
@@ -137,6 +166,16 @@ body {
 	.card-content {
 		height: 100px;
 	}
+	.card-bg {
+		background-color: #ffffff;
+		max-width: 768px;
+		height: 200px;
+		padding: 20px;
+	}
+	.card-img {
+		height: 200px;
+		border-radius: 30px;
+	}
 } 
 
 
@@ -145,8 +184,12 @@ body {
 
 
 @media screen and (min-device-width: 1024px) {
+	.search1 {
+		display: block;
+		margin-top: 10px;
+	}
 	.head-size1 {
-		margin-top: 160px;
+		margin-top: 96px;
 		margin-right: 200px;
 		font-size: 75px;
 	}
@@ -168,9 +211,21 @@ body {
 		height: 100px;
 	}
 	.card-bg {
-		background-color: #ffffff;
+		background:#ffffff;
 		max-width: 1440px;
 		height: 300px;
 		padding: 20px;
+	}
+	.card-img {
+		height: 300px;
+		border-radius: 30px;
+	}
+	.main-head li {
+		margin-right: 15px;
+		font-size: 30px;
+		
+	}
+	.logo1 {
+		margin-top: 80px;
 	}
 }

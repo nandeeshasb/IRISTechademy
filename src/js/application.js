@@ -24,3 +24,10 @@ function validate()
 		return true;
 	}
 }
+
+ 
+	$(document).ready(function(){
+		$('.humburger').click(function(){
+			$('ul').toggleClass('active')
+		});
+	});

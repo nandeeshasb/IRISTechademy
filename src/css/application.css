@@ -11,12 +11,13 @@ a, a:hover, a:active, a:focus, a:visited {
 a:hover {
 	color:#fff;
 }
-h1,h2,h3,h4,h5,p,a,span {
-	color: #fff;
+h1, h2, h3, h4, h5, p, a, span {
+	color: #ffffff;
 }
 body {
 	background-image: url("../img/index1.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .logo1 {
 	background-image: url("../img/techademy.png");
@@ -29,9 +30,29 @@ body {
 	display: block;
 	height: 39px;
 }
+.humburger {
+	cursor: pointer;
+}
 .main-head li{
+	display: block;
+	background-color: #000000;
+	line-height: 2.5rem;
+	padding-left: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	
+	
+}
+.main-head {
+left: 0;
+}
+.main-head a{
+	color:#ff2684;
+}
+.search1 {
 	display: none;
 }
+
 .humburger {
 	color:#fff;
 	font-size: 25px;
@@ -68,9 +89,100 @@ body {
 .card-content {
 	border:none;
 }
+.card-bg {
+	margin-bottom: 50px;
+}
+.home-content1,.home-content2 {
+	background-color: #20383d;
+	padding:15px 20px;
+}
+
+/* --------------loginPage start-------------------*/
+.logo {
+	background-image: url("../img/techademy.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 1px;
+	color: transparent;
+	width: 165px;
+	margin: 10px auto;
+	display: block;
+	height: 39px;
+}
+.main-login {
+	background-color: #000000;
+	padding: 40px 20px;
+}
+.login1 {
+	color: #000;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.container-form1 {
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.container-form1 input {
+	width: 100%;
+	border-radius: 50px;
+	border:1px solid #000;
+	height: 50px;
+	text-align: center;
+	color: #000;
+}
+.container-form1 button {
+	width: 100%;
+	border-radius: 50px;
+	border:1px solid blue;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 15px;
+	
+}
+.btn-right{
+	float: right;
+	margin-top: -36px;
+}
+
+.profile-img1 {
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	margin: 0 4px;
+
+}
+.profile-img2 {
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	margin: 0 4px;
+}
+.profile-img3 {
+	border-radius: 50px;
+	width: 55px;
+	height: 55px;
+	margin: 0 4px;
+}
+.profile-img4 {
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	margin: 0 4px;
+}
+.profile-img5 {
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	margin: 0 4px;
+}
+.container-img {
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 3px 3px #f5f2f2;
+}
 
 
-
+/* --------------loginPage end-------------------*/
 
 
 
@@ -92,6 +204,7 @@ body {
 		font-size: 22px;
 		font-weight: 600;
 		display: block;
+		background-color:transparent;
 	}
 	.main-head a, span {
 		color: #ff2684;
@@ -137,16 +250,72 @@ body {
 	.card-content {
 		height: 100px;
 	}
+	.card-bg {
+		background-color: #ffffff;
+		max-width: 768px;
+		height: 200px;
+		padding: 20px;
+	}
+	.card-img {
+		height: 200px;
+		border-radius: 30px;
+	}
 } 
+/* --------------loginPage start-------------------*/
+@media screen and (min-device-width: 768px) {
+	.logo {
+		float: left;
+		margin-top: -10px;
+	}
+	.main-login {
+		padding: 80px 20px;
+		background-color: #000000;
+	}
+	.container-form1 input {
+		width: 100%;
+		border-radius: 50px;
+		border:1px solid #000;
+		height: 50px;
+		text-align: center;
+		color: #000;
+	}
+	.container-form1 button {
+		width: 100%;
+		border-radius: 50px;
+		border:1px solid blue;
+		height: 50px;
+		text-align: center;
+		
+	}
+	.container-form1 {
+		background-color: #ffffff;
+		border-radius: 10px;
+		width: 300px;
 
+	}
+	.container-card h5, p {
+		padding: 0 10px;
+	}
+	.container-img {
+		background-color: #fff;
+		border-radius: 2px;
+		box-shadow: 3px 3px #f5f2f2;
+	}
+}
+
+/* --------------loginPage end-------------------*/
 
 
 
 
 
 @media screen and (min-device-width: 1024px) {
+	.search1 {
+		display: block;
+		margin-top: 10px;
+	}
 	.head-size1 {
-		margin-top: 160px;
+		margin-top: 96px;
 		margin-right: 200px;
 		font-size: 75px;
 	}
@@ -168,9 +337,46 @@ body {
 		height: 100px;
 	}
 	.card-bg {
-		background-color: #ffffff;
+		background:#ffffff;
 		max-width: 1440px;
 		height: 300px;
 		padding: 20px;
 	}
+	.card-img {
+		height: 300px;
+		border-radius: 30px;
+	}
+	.main-head li {
+		margin-right: 15px;
+		font-size: 30px;
+		
+	}
+	.logo1 {
+		margin-top: 80px;
+	}
 }
+/* --------------loginPage start-------------------*/
+@media screen and (min-device-width: 1024px) {
+	.container-form1 {
+		background-color: #ffffff;
+		border-radius: 10px;
+		width: 350px;
+		margin-top: -75px;
+		margin-left: 630px;
+		box-shadow: 3px 3px #f5f2f2;
+	}
+	.container-card {
+		width: 55%;
+		margin-left: 10px;
+	}
+	.container-img {
+		width: 40%;
+		/*margin-left:800px;*/
+		float: right;
+		margin-top: -100px;
+	}
+
+}
+
+
+/* --------------loginPage end-------------------*/
